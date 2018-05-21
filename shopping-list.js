@@ -45,9 +45,13 @@
 		
     //let listItem2 =  createNewTask(newTask2.value);
 		toDoUl.appendChild(listItem);
+		
+		
 		}
 		//bindIncompleteItems(listItem,completeTask);
 		//bindIncompleteItems(listItem2,completeTask);
+		newTask.value ="";
+		newTask2.value="";
 	};
 
 	
