@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping-List</title>
+	<link rel="stylesheet" type="text/css" href="shopping-list.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel=“stylesheet” href=“http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css“>
+</head>
+<body>
+	<div class="container">
+    <img src ="crop.png">
+  		<h1 align="center">Shopping List</h1>
+  
+  		<div class="new-task-container box">
+  
+  		<label for="new-task">Add New Task</label>
+  		<input type="text" id="new-task" name="text">
+  		<label for="new-task1">Add Quantity</label>
+  		<input type="number" name="num" id="new-task1" name="num">
+    	<button id="addTask" onclick="addTask()"><i class="fas fa-plus"></i></button>
+  
+  		</div>
+  
+  <div class="todo-list box">
+  
+    <h2>Incomplete Tasks</h2>
+    <ul id="ul1">
+      <li>
+      	<input type="checkbox" onclick="checkboxMethod(event)"/>
+      	<label>Task Name</label>
+      	<label>1</label>
+      	<span class="delete" onclick="deleteTask(event)">DELETE</span>
+      </li>
+      <li>
+      	<input type="checkbox" class="checkbox" onclick="checkboxMethod(event)" />
+      	<label>Task Name</label>
+      	<label>5</label>
+      	<span class="delete" onclick="deleteTask(event)">DELETE</span>
+      </li>
+      <li>
+      	<input type="checkbox" onclick="checkboxMethod(event)"/>
+      	<label>Task Name</label>
+      	<label>7</label>
+      	<span class="delete" onclick="deleteTask(event)">DELETE</span>
+      </li>
+      <li>
+      	<input type="checkbox" onclick="checkboxMethod(event)"/>
+      	<label>Task Name</label>
+      	<label>10</label>
+      	<span class="delete" onclick="deleteTask(event)">DELETE</span>
+      </li>
+      <li>
+      	<input type="checkbox" onclick="checkboxMethod(event)"/>
+      	<label>Task Name</label>
+      	<label>2</label>
+      	<span class="delete" onclick="deleteTask(event)">DELETE</span>
+      </li>
+    </ul>
+  
+  </div><!--/todo-list-->
+  <hr>
+  <div class="complete-list box">
+    
+    <h2>Completed Tasks</h2>
+
+    <ul id="ul2">
+    
+    </ul>   
+    
+  </div><!--/complete-list-->
+</div>
+
+    <script src="shopping-list.js">
+		
+  	</script>
+</body>
+  		
+</html>
